@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ScrollPane?>
+<AnchorPane prefHeight="596.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chattry2.Controller.chatController">
+    <ScrollPane layoutX="0.0" layoutY="0.0" prefHeight="545.0" prefWidth="399.0" fitToWidth="true" vbarPolicy="ALWAYS">
+    <VBox alignment="CENTER">
+        <VBox fx:id="chatContainer" spacing="5" />
+    </VBox>
+    </ScrollPane>
+     <HBox layoutX="203.0" layoutY="45.0" />
+      <TextField fx:id="messageField" layoutX="16.0" layoutY="555.0" prefHeight="26.0" prefWidth="296.0" promptText="Type your message" />
+      <Button fx:id="sendButton" layoutX="316.0" layoutY="555.0" text="Send" />
+   <Button fx:id="btnImage" layoutX="363.0" layoutY="554.0" onAction="#btnImage" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #121212;" text="+" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Button>
+
+
+</AnchorPane>
